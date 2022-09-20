@@ -1,0 +1,137 @@
+/*HEADER*/
+
+.logo {
+    margin-left: 15%;
+    width: 70rem;
+    height: 20rem;
+
+}
+
+
+
+.logo-item {
+    margin: auto;
+    width: 20rem;
+
+    width: 100rem;
+
+}
+
+
+.list {
+    display: flex;
+    padding: 1.7rem;
+    gap: 10rem;
+    margin-right: 10%;
+    justify-content: center;
+    list-style: none;
+    color: aliceblue;
+    font-size: 1.7rem;
+    background-color: rgba(173, 15, 15, 0.498);
+    max-width: 100rem;
+    margin: auto;
+    border-radius: 2rem;
+
+
+
+}
+
+
+
+.input-nav {
+    border-radius: 10px;
+    border: none;
+    height: 2.5rem;
+    width: 30rem;
+    font-size: 1rem;
+
+}
+
+.list-item {
+    text-decoration: none;
+    color: aliceblue;
+
+
+}
+
+.list-item:hover {
+    background-color: #3c0a0a;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    color: aliceblue;
+    transition: 0.4s;
+
+}
+
+
+
+/*BODY*/
+
+.body-container {
+
+    margin: auto;
+    box-shadow: 25px 25px 50px -12px rgba(201, 197, 197, 0.118);
+    max-width: 100rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+body {
+    background-color: #3c0a0a;
+
+}
+
+.item {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 3.6rem;
+}
+
+.item-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8rem;
+    margin: auto;
+    width: 68rem;
+
+
+}
+
+.card-item {
+    background-color: rgb(26, 25, 25);
+    border-radius: 1rem;
+    width: 30rem;
+    height: 32rem;
+    margin-bottom: 3rem;
+
+
+}
+
+.item-content {
+
+    margin: auto;
+    width: 10rem;
+    color: aliceblue;
+}
+
+
+
+.box-count {
+    color: aliceblue;
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.7rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+}
+
+.number-box {
+    margin-top: 0.5rem;
+    ;
+}
