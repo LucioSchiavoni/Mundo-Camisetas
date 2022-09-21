@@ -3,7 +3,8 @@ import './style.css';
 import Portada from '../assets/img/logo.png'
 export const Logo = () => {
     return (
-        <img className='logo' src={Portada} width={100} />
+
+        <img className='logo' alt='logo' src={Portada} width={100} />
     );
 };
 

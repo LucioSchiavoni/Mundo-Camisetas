@@ -10,6 +10,7 @@ import { Contacto } from './pages/Contacto';
 
 
 
+
 export const CartContext = React.createContext("");
 
 
@@ -25,7 +26,7 @@ export const App = () => {
             <Route path='/pages/Nosotros' element={<Nosotros />} />
             <Route path='/pages/Contacto' element={<Contacto />} />
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
-
+            <Route path='/cart' element={<CartContext />} />
           </Routes>
         </CartContext.Provider>
       </BrowserRouter>
