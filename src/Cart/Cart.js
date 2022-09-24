@@ -22,7 +22,7 @@ export const Cart = () => {
             {
                 cart.map(product => <ItemCart key={product.id} product={product} />)
             }
-            <p>
+            <p className='item-cart'>
                 total: {totalPrice()}
             </p>
         </>

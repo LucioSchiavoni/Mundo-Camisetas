@@ -1,3 +1,10 @@
 .item-cart {
     color: aliceblue;
+    text-align: center;
+}
+
+
+.card-product {
+    margin: auto;
+    width: 30rem;
 }
