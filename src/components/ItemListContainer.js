@@ -11,8 +11,8 @@ import holanda from '../assets/img/holanda.png';
 import holanda2 from '../assets/img/holanda2.png';
 import inglaterra from '../assets/img/inglaterra.png';
 import inglaterra2 from '../assets/img/inglaterra2.png';
-import iran from '../assets/img/proximamente.png';//faltan
-import iran2 from '../assets/img/proximamente.png';//faltan
+import iran from '../assets/img/iran.png';//faltan
+import iran2 from '../assets/img/iran2.png';//faltan
 import usa from '../assets/img/usa.png';
 import usa2 from '../assets/img/usa2.png';
 import gales from '../assets/img/gales.png';
@@ -29,14 +29,14 @@ import francia from '../assets/img/francia.png';
 import francia2 from '../assets/img/francia2.png';
 import australia from '../assets/img/australia.png';
 import australia2 from '../assets/img/australia2.png';
-import dinamarca from '../assets/img/proximamente.png';//faltan
-import dinamarca2 from '../assets/img/proximamente.png';//faltan
-import tunez from '../assets/img/proximamente.png';//faltan
-import tunez2 from '../assets/img/proximamente.png';//faltan
+import dinamarca from '../assets/img/dinamarca.png';
+import dinamarca2 from '../assets/img/dinamarca2.png';
+import tunez from '../assets/img/tunez.png';//faltan
+import tunez2 from '../assets/img/tunez2.png';//faltan
 import spain from '../assets/img/spain.png';
 import spain2 from '../assets/img/spain.png';
-import costaRica from '../assets/img/proximamente.png';//faltan
-import costaRica2 from '../assets/img/proximamente.png';//faltan
+import costaRica from '../assets/img/costarica.png';
+import costaRica2 from '../assets/img/costarica2.png';
 import alemania from '../assets/img/alemania.png';
 import alemania2 from '../assets/img/alemania2.png';
 import japon from '../assets/img/japon.png';
@@ -55,16 +55,16 @@ import serbia from '../assets/img/serbia.png';
 import serbia2 from '../assets/img/serbia2.png';
 import suiza from '../assets/img/suiza.png';
 import suiza2 from '../assets/img/suiza2.png';
-import camerun from '../assets/img/proximamente.png';//faltan
+import camerun from '../assets/img/camerun.png';//faltan
 import camerun2 from '../assets/img/proximamente.png';//faltan
 import portugal from '../assets/img/portugal.png';
 import portugal2 from '../assets/img/portugal2.png';
-import ghana from '../assets/img/proximamente.png';
-import ghana2 from '../assets/img/proximamente.png';
+import ghana from '../assets/img/ghana.png';
+import ghana2 from '../assets/img/ghana2.png';
 import uruguay from '../assets/img/uruguay.png';
 import uruguay2 from '../assets/img/uruguay2.png';
-import korea from '../assets/img/proximamente.png';///faltan
-import korea2 from '../assets/img/proximamente.png';///faltan
+import korea from '../assets/img/korea.png';
+import korea2 from '../assets/img/korea2.png';
 
 
 const productos = [
@@ -90,7 +90,7 @@ const productos = [
         id: 3,
         name: "Senegal",
         precio: 130,
-        medidas: "1x0.6",
+        marca: "Puma",
         img: senegal,
         img2: senegal2
     },

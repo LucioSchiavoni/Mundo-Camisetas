@@ -11,7 +11,7 @@ export const Cart = () => {
     if (cart.length === 0) {
         return (
             <>
-                <p>No tiene productos </p>
+                <p className='item-cart'>No tiene productos </p>
                 <Link to='/' className='btn btn-light'>Ir a comprar</Link>
 
             </>
