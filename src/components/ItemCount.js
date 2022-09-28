@@ -1,13 +1,13 @@
 import * as React from 'react';
 import './style.css';
 import { useState, useEffect } from 'react';
-import { useCartContext } from '../Cart/CartContext'
+
 
 
 
 const ItemCount = ({ stock, initial, onAdd }) => {
     const [count, setCount] = useState(initial);
-    const { addProduct } = useCartContext();
+
     useEffect(() => {
         setCount(parseInt(initial))
     }, [initial])
@@ -21,7 +21,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             <button className='btn btn-light' disabled={count <= 1} onClick={() => {
                 setCount(count - 1);
             }}>-</button><br /><br />
-            <button className='btn btn-light' disabled={stock <= 0} onClick={() => onAdd(addProduct)}>Añadir al carrito</button>
+            <button className='btn btn-light' disabled={stock <= 0} onClick={() => onAdd(count)}>Añadir al carrito</button>
         </div>
     );
 

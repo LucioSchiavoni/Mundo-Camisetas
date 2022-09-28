@@ -8,3 +8,9 @@
     margin: auto;
     width: 30rem;
 }
+
+.img-cart {
+    width: 14rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}

@@ -7,9 +7,11 @@ export const ItemDetail = ({ data }) => {
 
     const [carrito, setCarrito] = useState(false)
     const { addProduct } = useCartContext();
+
     const onAdd = (quantity) => {
         setCarrito(true);
         addProduct(data, quantity);
+        console.log(`Compraste ${quantity} unidades `)
     }
 
 

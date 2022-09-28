@@ -18,7 +18,7 @@ const CartProvider = ({ children }) => {
                 return product.id === item.id ? { ...product, quantity: product.quantity + quantity } : product
             }));
         } else {
-            setCart([...cart, { ...item, quantity }])
+            setCart([...cart, { ...item, quantity }]);
         }
     }
 

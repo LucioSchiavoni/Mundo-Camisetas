@@ -360,7 +360,6 @@ const productos = [
 export const ItemListContainer = () => {
     const [data, setData] = useState([]);
 
-
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
