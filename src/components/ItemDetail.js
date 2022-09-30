@@ -17,10 +17,10 @@ export const ItemDetail = ({ data }) => {
 
     return (
         <div className='card-item'>
-            <img src={data.img} className="item" alt="Imagen kit" />
-            <h5 className="item-content">{data.name}</h5>
-            <p className="item-content">marca: {data.marca}</p>
-            <p className="item-content"> precio: {data.precio} USD$</p>
+            <img src={data.image} className="item" alt="Imagen kit" />
+            <h5 className="item-content">{data.Nombre}</h5>
+            <p className="item-content">marca: {data.Marca}</p>
+            <p className="item-content"> precio: {data.Precio} USD$</p>
             <br />
             {
                 carrito ? <Link to='/cart' className="btn btn-light">Terminar compra</Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />

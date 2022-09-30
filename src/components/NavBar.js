@@ -12,8 +12,10 @@ export const NavBar = () => {
             <ul className='list'>
 
                 <li ><NavLink to='/' className='list-item'>Inicio</NavLink></li>
-                <li ><NavLink to='../pages/contacto' className='list-item'>Contacto</NavLink></li>
-                <li ><NavLink to='../pages/nosotros' className='list-item'>Nosotros</NavLink></li>
+                <li ><NavLink to='/' className='list-item'>Alternativas</NavLink></li>
+                <li ><NavLink to='/' className='list-item'> Contacto</NavLink></li>
+
+
                 <input type="text" id='inputId' className='input-nav' placeholder='Buscar productos..' />
                 <CartWidget />
             </ul>
