@@ -9,11 +9,11 @@ export const Cart = () => {
     const { cart, totalPrice } = useCartContext();
 
     const order = {
-        comprador: {
-            name: "Juan",
-            email: "JuanJose@gmail.com",
-            numero: "12345678",
-            direccion: "Av. Siempre viva"
+        buyer: {
+            name: "Carlos",
+            email: "Carlos33@gmail.com",
+            phone: "12345678",
+            adress: "Av. Siempre viva"
         },
         items: cart.map(product => ({ id: product.id, Nombre: product.Nombre, Precio: product.Precio, quantity: product.quantity })),
         total: totalPrice(),
