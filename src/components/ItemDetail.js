@@ -20,7 +20,7 @@ export const ItemDetail = ({ data }) => {
             <img src={data.image} className="item" alt="Imagen kit" />
             <h5 className="item-content">{data.Nombre}</h5>
             <p className="item-content">marca: {data.Marca}</p>
-            <p className="item-content"> precio: {data.Precio} USD$</p>
+            <p className="item-content"> precio: {data.Precio} $USD</p>
             <br />
             {
                 carrito ? <Link to='/cart' className="btn btn-light">Terminar compra</Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />
