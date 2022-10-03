@@ -1,17 +1,17 @@
 import React from 'react'
-import './itemCart.css'
-import { useCartContext } from './CartContext'
+import './style.css'
+import { useCartContext } from '../Cart/CartContext'
 import NavBar from '../components/NavBar';
 
 
-export const ItemCart = ({ product }) => {
+export const ItemAwayCart = ({ product }) => {
     const { removeProduct } = useCartContext();
     return (
         <>
             <NavBar />
 
             <div className="card" style={{ "width": "18rem" }}>
-                <img src={product.image} className="card-img-top" alt="..." />
+                <img src={product.image2} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">Kit: {product.Nombre}</h5>
                     <p className="card-text">Cantidad: {product.quantity}</p>
@@ -26,4 +26,4 @@ export const ItemCart = ({ product }) => {
     )
 }
 
-export default ItemCart;
+export default ItemAwayCart;

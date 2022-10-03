@@ -1,0 +1,35 @@
+.container-video {
+    position: relative;
+
+}
+
+.container-video video {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.logo-nav {
+    display: flex;
+
+}
+
+
+
+.span-input {
+    margin-left: 2rem;
+}
+
+.input-content {
+    display: flex;
+
+
+}
+
+
+.cart-nav {
+    margin-top: 1.4rem;
+}

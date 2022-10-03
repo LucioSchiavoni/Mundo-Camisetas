@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../Cart/CartContext'
-import ItemCount from './ItemCount'
-import NavBar from './NavBar'
+import ItemCount from '../components/ItemCount'
+import NavBar from '../components/NavBar'
 
-import CartWidget from './CartWidget'
 
-export const ItemDetail = ({ data }) => {
+
+export const AwayDetail = ({ data }) => {
 
     const [carrito, setCarrito] = useState(false)
     const { addProduct } = useCartContext();
@@ -21,23 +21,19 @@ export const ItemDetail = ({ data }) => {
     return (
         <>
             <NavBar />
-            <div className='cart-nav'>
-                <CartWidget />
-            </div>
             <div className='card-item'>
-                <img src={data.image} className="item" alt="Imagen kit" />
+                <img src={data.image2} className="item" alt="Imagen kit" />
                 <h5 className="item-content">{data.Nombre}</h5>
                 <p className="item-content">Marca: {data.Marca}</p>
-                <p className="item-content"> Precio: ${data.Precio} </p>
+                <p className="item-content"> Precio: ${data.Precio}</p>
                 <br />
                 {
-                    carrito ? <Link to='/cart' className="btn btn-light">Terminar compra</Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />
+                    carrito ? <Link to='/cartAway' className="btn btn-light">Terminar compra</Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />
                 }
             </div>
-
         </>
 
     )
 }
 
-export default ItemDetail;
+export default AwayDetail;

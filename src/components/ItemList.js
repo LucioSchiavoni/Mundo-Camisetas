@@ -6,6 +6,9 @@ export const ItemList = ({ data = [] }) => {
 
     return (
 
-        data.map(productos => <Item key={productos.id} info={productos} />)
+        data.map(productos =>
+            <div className='grid-card'>
+                <Item key={productos.id} info={productos} />
+            </div>)
     )
 }

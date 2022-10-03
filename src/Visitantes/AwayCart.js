@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useCartContext } from './CartContext'
-import ItemCart from './ItemCart';
+import { useCartContext } from '../Cart/CartContext'
+import ItemAwayCart from './ItemAwayCart';
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
-import './itemCart.css'
+import './style.css'
 
-export const Cart = () => {
+export const AwayCart = () => {
 
     const { cart, totalPrice } = useCartContext();
 
@@ -46,7 +46,7 @@ export const Cart = () => {
 
                     cart.map(product =>
 
-                        <ItemCart key={product.id} product={product} />
+                        <ItemAwayCart key={product.id} product={product} />
                     )
 
                 }
@@ -61,4 +61,4 @@ export const Cart = () => {
 }
 
 
-export default Cart;
+export default AwayCart;

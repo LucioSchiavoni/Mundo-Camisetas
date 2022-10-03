@@ -1,27 +1,23 @@
 import React from 'react';
-import Logo from './Logo';
+
 import './style.css';
-import CartWidget from './CartWidget';
+
 import { NavLink } from 'react-router-dom';
 
 
 export const NavBar = () => {
     return (
         <header >
-            <div className="logo-item"><Logo /></div>
+
+
+
             <ul className='list'>
+                <li ><NavLink to='/Home' className='list-item'><span><ion-icon name="shirt-outline"></ion-icon></span><span>Locales</span></NavLink></li>
+                <li ><NavLink to='/Away' className='list-item'><span><ion-icon name="shirt"></ion-icon></span><span>Visitantes</span></NavLink></li>
+                <li ><NavLink to='/Contacto' className='list-item'> <span><ion-icon name="call-outline"></ion-icon></span><span>Contacto</span></NavLink></li>
 
-                <li ><NavLink to='/' className='list-item'>Inicio</NavLink></li>
-                <li ><NavLink to='/' className='list-item'>Alternativas</NavLink></li>
-                <li ><NavLink to='/' className='list-item'> Contacto</NavLink></li>
-
-
-                <input type="text" id='inputId' className='input-nav' placeholder='Buscar productos..' />
-                <CartWidget />
             </ul>
-
-
-        </header>
+        </header >
     );
 
 

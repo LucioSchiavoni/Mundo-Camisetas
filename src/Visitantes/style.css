@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Source+Serif+Pro:wght@300&display=swap');
+
+.card-name {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+
+}
+
+.img-card {
+    background-color: rgb(82, 15, 15);
+}
+
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}

@@ -1,5 +1,5 @@
 .item-cart {
-    color: aliceblue;
+    color: rgb(75, 8, 8);
     text-align: center;
 }
 
@@ -7,10 +7,25 @@
 .card-product {
     margin: auto;
     width: 30rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .img-cart {
     width: 14rem;
     border-radius: 1rem;
     margin-top: 1rem;
+}
+
+.gird-item-cart {
+    gap: 2rem;
+    margin: 8rem;
+    display: flex;
+
+}
+
+
+.btn-comprar {
+    margin-left: 10rem;
+
 }

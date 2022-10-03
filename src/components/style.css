@@ -1,56 +1,48 @@
 /*HEADER*/
 
 .logo {
-    margin-left: 15%;
-    width: 70rem;
-    height: 20rem;
+
+    width: 5rem;
+    height: 5em;
+    border-radius: 2rem;
+    margin-left: 13rem;
+    margin-top: 1rem;
 
 }
-
-
-
-.logo-item {
-    margin: auto;
-    width: 20rem;
-
-    width: 100rem;
-
-}
-
 
 .list {
-    display: flex;
+    margin-left: 45rem;
     padding: 1.7rem;
     gap: 10rem;
-    margin-right: 10%;
     justify-content: center;
     list-style: none;
-    color: aliceblue;
+    display: flex;
     font-size: 1.7rem;
-    background-color: rgba(173, 15, 15, 0.498);
-    max-width: 100rem;
-    margin: auto;
+    background-color: transparent;
+    max-width: 15rem;
     border-radius: 2rem;
-
-
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: aliceblue;
 }
 
+.list-item {
+    text-decoration: none;
+    color: #3c0a0a;
+    display: flex;
 
+}
 
 .input-nav {
     border-radius: 10px;
     border: none;
     height: 2.5rem;
-    width: 30rem;
+    width: 25rem;
     font-size: 1rem;
-
-}
-
-.list-item {
-    text-decoration: none;
-    color: aliceblue;
-
+    margin-left: 60em;
+    margin-top: 1.8rem;
 
 }
 
@@ -79,13 +71,13 @@
 }
 
 body {
-    background-color: #3c0a0a;
+    background-color: #f3f3f3;
 
 }
 
 .item {
     width: 23rem;
-    height: 23rem;
+    height: 20rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -95,10 +87,10 @@ body {
 .item-grid {
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10rem;
     margin: auto;
-    width: 68rem;
+    width: 90em;
 
 
 }
@@ -120,6 +112,14 @@ body {
     color: aliceblue;
 }
 
+.item-cart {
+    margin: 2rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+
 
 
 .box-count {
@@ -134,4 +134,17 @@ body {
 .number-box {
     margin-top: 0.5rem;
     ;
+}
+
+
+.image {
+    width: 19.6rem;
+}
+
+.img-card {
+    width: 20rem;
+    border-width: 3px;
+    border-color: #3c0a0a;
+    border-style: double;
+    box-shadow: 50px 50px 50px -12px rgb(0 0 0 / 0.25);
 }

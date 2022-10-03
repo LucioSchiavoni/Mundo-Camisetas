@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { ItemDetail } from './ItemDetail';
+import { AwayDetail } from './AwayDetail';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
 
 
 
-export const ItemDetailContainer = () => {
+export const AwayDetailContainer = () => {
 
     const [data, setData] = useState({});
     const { detalleId } = useParams();
@@ -20,10 +20,10 @@ export const ItemDetailContainer = () => {
     return (
 
 
-        <ItemDetail data={data} />
+        <AwayDetail data={data} />
 
 
     );
 }
 
-export default ItemDetailContainer;
+export default AwayDetailContainer;

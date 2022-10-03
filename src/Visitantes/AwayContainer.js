@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './style.css';
-import { ItemList } from './ItemList';
+import './style.css';;
 import { getItems } from '../api';
+import { AwayList } from './AwayList';
 
 
 
-
-export const ItemListContainer = () => {
+export const AwayContainer = () => {
     const [data, setData] = useState();
     useEffect(() => {
         getItems().then(res => setData(res))
@@ -15,7 +14,7 @@ export const ItemListContainer = () => {
     return (
         <div className='body-container'>
             <div className='item-grid'>
-                <ItemList data={data} />
+                <AwayList data={data} />
 
             </div>
         </div>
@@ -23,4 +22,4 @@ export const ItemListContainer = () => {
 };
 
 
-export default ItemListContainer;
+export default AwayContainer;
