@@ -1,6 +1,7 @@
 .container-video {
     position: relative;
 
+
 }
 
 .container-video video {
@@ -58,4 +59,18 @@
     margin-top: 10rem;
     width: 50rem;
     margin-left: 30rem;
+}
+
+.footer {
+
+    position: absolute;
+    font-size: 3rem;
+    z-index: 1;
+    color: aliceblue;
+    bottom: 30px;
+    width: 100%;
+    padding: -3rem;
+    margin-left: 55rem;
+    display: flex;
+
 }

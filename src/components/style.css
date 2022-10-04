@@ -1,5 +1,6 @@
 /*HEADER*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Roboto+Condensed:wght@300&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Roboto+Condensed:wght@300&family=Staatliches&family=Viga&display=swap');
 
 .logo {
 
@@ -131,7 +132,7 @@ body {
     height: 3rem;
 
     border-radius: 1rem;
-    width: 30rem;
+    width: 33rem;
     margin: auto;
 
 }
@@ -147,8 +148,8 @@ body {
 }
 
 .btn-count:hover {
-    background-color: aqua;
-    border-color: #044156;
+    background-color: #63a194;
+    border-color: #63a194;
 }
 
 .btn-count-cart {
@@ -156,6 +157,7 @@ body {
     border-radius: 1rem;
     border-style: solid;
     border-color: #56042c;
+    height: 4rem;
 
 }
 
@@ -163,17 +165,18 @@ body {
     width: 9rem;
     border-radius: 1rem;
     border-style: solid;
-    border-color: #3786a5;
-    background-color: aqua;
+    border-color: #63a194;
+    background-color: #63a194;
 
 }
 
 .count-text {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #56042c;
-    margin-right: -5rem;
-    width: 3px;
-    margin-top: -0.4rem;
+    margin-right: -0.5rem;
+    width: 9px;
+    margin-top: -0.89rem;
+    margin-left: 5rem;
 }
 
 .image {
@@ -242,7 +245,10 @@ body {
 .text-detail {
     color: #f3f3f3;
     margin: 3rem;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Viga', sans-serif
 }
 
 
