@@ -1,14 +1,14 @@
 .item-cart {
-    color: rgb(75, 8, 8);
+    color: #56042c;
     text-align: center;
 }
 
 
 .card-product {
-    margin: auto;
+    margin: 8rem;
+    gap: 0.4rem;
     width: 30rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
 }
 
 .img-cart {
@@ -28,4 +28,9 @@
 .btn-comprar {
     margin-left: 10rem;
 
+}
+
+.form-content {
+    width: 30rem;
+    margin: auto;
 }

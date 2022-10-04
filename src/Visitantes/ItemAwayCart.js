@@ -9,7 +9,6 @@ export const ItemAwayCart = ({ product }) => {
     return (
         <>
             <NavBar />
-
             <div className="card" style={{ "width": "18rem" }}>
                 <img src={product.image2} className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -18,9 +17,9 @@ export const ItemAwayCart = ({ product }) => {
                     <p className="card-text">Precio: ${product.Precio}</p>
                     <p className="card-text">Subtotal: ${product.quantity * product.Precio}</p>
                     <button className='btn btn-light' onClick={() => removeProduct(product.id)}>Eliminar</button>
-
                 </div>
             </div>
+
 
         </>
     )

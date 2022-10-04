@@ -33,3 +33,29 @@
 .cart-nav {
     margin-top: 1.4rem;
 }
+
+
+
+
+.fondo-item-list {
+
+    width: 110rem;
+    margin: auto;
+
+
+}
+
+
+.input-nav:focus {
+    color: #56042c;
+    border-color: #56042c;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+.contacto-item {
+    margin-top: 10rem;
+    width: 50rem;
+    margin-left: 30rem;
+}

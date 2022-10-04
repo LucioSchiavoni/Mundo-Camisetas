@@ -21,8 +21,9 @@ export const Away = () => {
             </div>
 
         </div>
-
-        <AwayContainer />
+        <div className='fondo-item-list'>
+            <AwayContainer />
+        </div>
     </>
     )
 }

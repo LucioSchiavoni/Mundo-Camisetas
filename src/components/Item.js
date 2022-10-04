@@ -13,7 +13,7 @@ const Item = ({ info }) => {
             <img src={info.image} className="image" alt="kit" />
             <div className="card-body">
                 <p className="card-text card-name"><b>{info.Nombre}</b></p>
-                <Link to={`/detalleAway/${info.id}`} className='btn btn-dark'> Detalles</Link>
+                <Link to={`/detalle/${info.id}`} className='btn btn-color'> Detalles</Link>
             </div>
         </div>
 

@@ -17,3 +17,4 @@ export const auth = getAuth(firebaseApp);
 setPersistence(auth, browserLocalPersistence);
 
 
+export default firebaseApp;

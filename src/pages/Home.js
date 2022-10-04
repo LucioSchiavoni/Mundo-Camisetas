@@ -9,20 +9,24 @@ export const Home = () => {
 
     return (
         <>
-            <div className='input-content'>
-                <Logo />
-                <NavBar />
+            <div className='content-list'>
+                <div className='input-content'>
+                    <Logo />
+                    <NavBar />
 
-                <form id='formulario'>
-                    <input type="text" id='inputForm' className='input-nav' placeholder='Buscar..' />
-                    <span className='span-input'><ion-icon name="search-outline"></ion-icon></span>
+                    <form id='formulario'>
+                        <input type="text" id='inputForm' className='input-nav' placeholder='Buscar..' />
+                        <span className='span-input'><ion-icon name="search-outline"></ion-icon></span>
 
-                </form>
-                <div className='cart-nav'>
-                    <CartWidget />
+                    </form>
+                    <div className='cart-nav'>
+                        <CartWidget />
+                    </div>
+                </div>
+                <div className='fondo-item-list'>
+                    <ItemListContainer />
                 </div>
             </div>
-            <ItemListContainer />
 
         </>
     )

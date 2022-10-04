@@ -41,7 +41,7 @@ export const AwayCart = () => {
     }
     return (
         <>
-            <div className='gird-item-cart'>
+            <div className='card-product'>
                 {
 
                     cart.map(product =>

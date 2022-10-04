@@ -14,15 +14,15 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     return (
         <div className='box-count'>
 
-            <button className='btn btn-light' disabled={count <= 1} onClick={() => {
+            <button className='btn-color btn-count' disabled={count <= 1} onClick={() => {
                 setCount(count - 1);
             }}>-</button>
-            <div className='number-box'>{count}</div>
-            <button className='btn btn-light' disabled={count >= stock} onClick={() => {
+            <p className='count-text'>{count}</p>
+            <button className='btn-color btn-count' disabled={count >= stock} onClick={() => {
                 setCount(count + 1);
             }}>+</button>
-            <br /><br />
-            <button className='btn btn-light' disabled={stock <= 0} onClick={() => onAdd(count)}>Añadir al carrito</button>
+
+            <button className=' btn-color btn-count-cart' disabled={stock <= 0} onClick={() => onAdd(count)}>Añadir al carrito</button>
         </div>
     );
 

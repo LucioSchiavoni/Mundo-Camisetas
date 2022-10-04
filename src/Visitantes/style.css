@@ -2,14 +2,14 @@
 
 .card-name {
     text-align: center;
-    color: aliceblue;
+    color: #56042c;
     font-family: 'Lobster Two', cursive;
     font-size: 2rem;
 
 }
 
 .img-card {
-    background-color: rgb(82, 15, 15);
+    background-color: rgb(255, 255, 255);
 }
 
 
