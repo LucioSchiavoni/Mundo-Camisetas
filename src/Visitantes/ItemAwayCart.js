@@ -4,11 +4,12 @@ import { useCartContext } from '../Cart/CartContext'
 import NavBar from '../components/NavBar';
 
 
+
 export const ItemAwayCart = ({ product }) => {
     const { removeProduct } = useCartContext();
     return (
         <>
-
+            <NavBar />
             <div className="card" style={{ "width": "18rem" }}>
                 <img src={product.image2} className="card-img-top" alt="..." />
                 <div className="card-body">

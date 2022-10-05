@@ -9,8 +9,8 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-}
 
+}
 
 
 .logo-nav {
@@ -33,6 +33,7 @@
 
 .cart-nav {
     margin-top: 1.4rem;
+
 }
 
 
@@ -62,15 +63,26 @@
 }
 
 .footer {
-
+    list-style: none;
     position: absolute;
-    font-size: 3rem;
+    font-size: 2.6rem;
     z-index: 1;
     color: aliceblue;
-    bottom: 30px;
-    width: 100%;
-    padding: -3rem;
-    margin-left: 55rem;
+    right: -17rem;
+    top: 1.5rem;
+    width: 50rem;
+    padding: 0rem;
+    margin-left: 47rem;
     display: flex;
+    gap: 2rem;
+    color: #56042c;
+}
 
+
+.footer-item a:hover {
+    color: #FEC310;
+}
+
+.footer-item a {
+    color: #56042c;
 }

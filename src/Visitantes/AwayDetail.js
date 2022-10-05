@@ -20,16 +20,21 @@ export const AwayDetail = ({ data }) => {
 
     return (
         <>
-            <NavBar />
-            <div className='card-item'>
-                <img src={data.image2} className="item" alt="Imagen kit" />
-                <h5 className="item-content">{data.Nombre}</h5>
-                <p className="item-content">Marca: {data.Marca}</p>
-                <p className="item-content"> Precio: ${data.Precio}</p>
-                <br />
-                {
-                    carrito ? <Link to='/cartAway' className="btn btn-light">Terminar compra</Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />
-                }
+            <div className='body-detail'>
+                <NavBar />
+                <div className='card-detail'>
+                    <img src={data.image2} className='img-detail' alt='kit' />
+                    <div>
+                        <p className='text-detail'><b>Kit:</b> {data.Nombre}</p>
+                        <p className='text-detail'><b>Marca:</b> {data.Marca}</p>
+                        <p className='text-detail'> <b>Precio:</b> ${data.Precio}</p>
+                    </div>
+                </div>
+                <div>
+                    {
+                        carrito ? <Link to='/cartAway' className="btn btn-color btn-ir-carrito">Ir al carrito</Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />
+                    }
+                </div>
             </div>
         </>
 

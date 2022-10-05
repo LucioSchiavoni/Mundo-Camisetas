@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import './style.css';;
+import React from 'react';
+import { useState, useEffect } from 'react';
 import { getItems } from '../api';
 import { AwayList } from './AwayList';
+import './style.css';;
+
+
 
 
 

@@ -33,6 +33,7 @@ export const App = () => {
             <Route path='/detalleAway/:detalleId' element={<AwayDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/cartAway' element={<AwayCart />} />
+
           </Routes>
         </CartProvider>
       </BrowserRouter>

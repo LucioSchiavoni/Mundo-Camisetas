@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 export const NavBar = () => {
     return (
-        <header >
+        <header  >
 
 
 
@@ -17,6 +17,7 @@ export const NavBar = () => {
                 <li ><NavLink to='/Contacto' className='list-item'> <span><ion-icon name="call-outline"></ion-icon></span><span>Contacto</span></NavLink></li>
 
             </ul>
+
         </header >
     );
 

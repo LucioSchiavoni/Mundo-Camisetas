@@ -2,10 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useCartContext } from './CartContext'
 import ItemCart from './ItemCart';
-import { addDoc, collection, getFirestore, getDoc, updateItem } from 'firebase/firestore'
+import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import './itemCart.css'
 import { useState } from 'react';
 import firebaseApp from '../firebase/config'
+import NavBar from '../components/NavBar';
+import { useEffect } from 'react';
+
+
 
 const db = getFirestore(firebaseApp)
 
@@ -34,6 +38,7 @@ export const Cart = () => {
 
     const guardarDatos = async (e) => {
         e.preventDefault();
+
         // console.log(user);
         try {
             await addDoc(collection(db, "orders"), {
@@ -47,11 +52,14 @@ export const Cart = () => {
 
 
 
+
+
     if (cart.length === 0) {
         return (
             <>
-                <p className='item-cart'>No tiene productos </p>
-                <Link to='/Home' className='btn btn-light card-product'>Ir a comprar</Link>
+                <NavBar />
+                <p className='item-cart item-none-product'>No tiene productos </p>
+                <Link to='/Home' className='btn-comprar btn-ir'>Ir a comprar</Link>
 
             </>
         )
@@ -74,17 +82,17 @@ export const Cart = () => {
                 <div className='form-content'>
                     <form onSubmit={guardarDatos}>
                         <div className="mb-3">
-                            <p style={{ fontSize: '2rem' }}>Completa la compra</p>
+                            <p className='form-p'>Completa la compra</p>
                             <label for="exampleInputPassword1" className="form-label">Nombre</label>
                             <input type="text" className="form-control" name='name' id="exampleInputPassword1" required onChange={capturarInputs} value={user.name} />
                         </div>
                         <div className="mb-3">
-                            <label for="exampleInputEmail1" className="form-label">Email address</label>
+                            <label for="exampleInputEmail1" className="form-label">Email </label>
                             <input type="email" className="form-control" name='email' id="exampleInputEmail1" aria-describedby="emailHelp" required onChange={capturarInputs} value={user.email} />
                             <div id="emailHelp" className="form-text">No compartiremos tus datos con nadie.</div>
                         </div>
                         <div className="mb-3">
-                            <label for="exampleInputPassword1" className="form-label">Numero</label>
+                            <label for="exampleInputPassword1" className="form-label">Telefono</label>
                             <input type="number" className="form-control" name='number' id="exampleInputPassword1" required onChange={capturarInputs} value={user.number} />
                         </div>
                         <div className="mb-3">
@@ -95,9 +103,9 @@ export const Cart = () => {
                             <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                             <label className="form-check-label" for="exampleCheck1">Aceptar condiciones</label>
                         </div>
-                        <p className='item-cart'>
+                        <p className='total-price'>
                             Total: ${totalPrice()}
-                            {/* <button className='btn btn-light btn-comprar' >Comprar</button> */}
+
                         </p>
                         <button type="submit" className=" btn-comprar">Comprar</button>
                     </form>

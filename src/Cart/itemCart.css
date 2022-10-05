@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Outfit&family=Source+Serif+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&family=Barlow:ital,wght@0,200;1,400&family=Lobster+Two&family=Outfit&family=Rubik:wght@500&family=Source+Serif+Pro:wght@300&display=swap');
+
+
 .item-cart {
-    color: #ffffff;
+    color: #56042C;
     text-align: center;
 }
 
 
 .card-product {
     margin: 8rem;
-    gap: 0.4rem;
+    gap: 10rem;
     width: 30rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    margin-left: 0rem;
 
 }
 
@@ -40,6 +46,7 @@
 }
 
 
+
 .form-container {
     width: 100%;
     background-color: #56042C;
@@ -53,10 +60,80 @@
     width: 7rem;
     color: aliceblue;
     border-color: #1077C3;
+    margin-left: 13rem;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
 }
 
 .btn-comprar:hover {
     background-color: #FEC310;
     color: #0e3754;
     border-color: #FEC310;
+}
+
+.card-text {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn-eliminar {
+    background-color: #56042C;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    width: 5rem;
+    color: aliceblue;
+    border-color: #56042C;
+    margin-left: 4.4rem;
+
+}
+
+.btn-eliminar:hover {
+    background-color: #FEC310;
+    border-color: #FEC310;
+    color: #1077C3;
+}
+
+.total-price {
+    color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.form-p {
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.item-none-product {
+    margin-top: 10rem;
+    margin-left: -10rem;
+}
+
+.btn-ir {
+    margin-left: 50rem;
+
+}
+
+.card {
+    background-color: #56042C;
+    color: aliceblue;
+}
+
+
+.btn {
+    color: aliceblue;
+    background-color: #1077C3;
+}
+
+.btn:hover {
+    background-color: #FEC310;
+    color: #56042C;
 }
