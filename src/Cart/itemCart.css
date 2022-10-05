@@ -112,10 +112,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-.item-none-product {
-    margin-top: 10rem;
 
-}
 
 .text-item {
     margin-right: 50rem;
@@ -140,4 +137,12 @@
 .btn:hover {
     background-color: #FEC310;
     color: #56042C;
+}
+
+.text-alert-product {
+    margin-top: 20rem;
+    text-align: center;
+    margin-right: 12rem;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
 }
