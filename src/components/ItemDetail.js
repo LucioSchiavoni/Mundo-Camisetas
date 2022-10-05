@@ -20,17 +20,26 @@ export const ItemDetail = ({ data }) => {
 
     return (
         <>
-            <div className='body-detail'>
-                <NavBar />
-                <div className='cart-nav'>
-                    <CartWidget />
-                </div>
+
+            <NavBar />
+
+            <CartWidget />
+            <div className='body-detail' style={{ position: "absolute", height: "100%", top: "0" }}>
                 <div className='card-detail'>
                     <img src={data.image} className='img-detail' alt='kit' />
                     <div>
                         <p className='text-detail'><b>Kit:</b> {data.Nombre}</p>
                         <p className='text-detail'><b>Marca:</b> {data.Marca}</p>
                         <p className='text-detail'> <b>Precio:</b> ${data.Precio}</p>
+                        <select className="form-select select-btn" aria-label="Default select example">
+                            <option selected>Talle</option>
+
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                        </select>
                     </div>
                 </div>
                 <div >
@@ -39,14 +48,8 @@ export const ItemDetail = ({ data }) => {
                     }
                 </div>
 
-
-
             </div>
-
-
-
         </>
-
     )
 }
 

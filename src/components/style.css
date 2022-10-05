@@ -270,3 +270,12 @@ body {
 .btn-ir-carrito {
     margin-left: 40rem;
 }
+
+.select-btn {
+    width: 10rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #1077C3;
+    color: #f3f3f3;
+    border-color: #1077C3;
+}

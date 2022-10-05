@@ -114,7 +114,11 @@
 
 .item-none-product {
     margin-top: 10rem;
-    margin-left: -10rem;
+
+}
+
+.text-item {
+    margin-right: 50rem;
 }
 
 .btn-ir {

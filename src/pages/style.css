@@ -30,9 +30,18 @@
 
 }
 
+.input-nav {
+    margin-left: 40rem;
+
+}
+
+.item-cart {
+    margin-left: 100rem;
+}
 
 .cart-nav {
-    margin-top: 1.4rem;
+    margin-top: 1rem;
+    width: 10rem;
 
 }
 

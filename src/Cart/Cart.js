@@ -58,7 +58,7 @@ export const Cart = () => {
         return (
             <>
                 <NavBar />
-                <p className='item-cart item-none-product'>No tiene productos </p>
+                <p className='item-cart item-none-product '>No tiene productos </p>
                 <Link to='/Home' className='btn-comprar btn-ir'>Ir a comprar</Link>
 
             </>
