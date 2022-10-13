@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import Portada from '../assets/img/cup.png'
+import Portada from '../assets/img/logo.png'
 import { Link } from 'react-router-dom';
 
 export const Logo = () => {

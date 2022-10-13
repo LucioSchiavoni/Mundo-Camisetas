@@ -47,8 +47,8 @@ export const Cart = () => {
         const precioFinal = totalPrice();
         const obj = { user, items, precioFinal };
         createItem(obj).then(id => {
-            Swal.fire(`<p>Compra finalizada</p>
-         <p>Su codigo de orden es ${id}</p> `)
+            Swal.fire(`<p>Compra finalizada</p> <br/>
+         <p>Su codigo de orden es: <b>${id}</b></p> `)
         });
         setUser({
             name: "",
@@ -108,7 +108,7 @@ export const Cart = () => {
                             <div className="mb-3">
                                 <label className="form-label">Repetir Email </label>
                                 <input type="email"
-                                    className="form-control" name='emailRepeat' aria-describedby="emailHelp" required />
+                                    className="form-control" name='emailRepeat' aria-describedby="emailHelp" onChange={capturarInputs} value={user.emailRepeat} />
                             </div>
                         </div>
                         <div className="mb-3">
@@ -128,7 +128,7 @@ export const Cart = () => {
 
                         </p>
 
-                        <button onClick={guardarDatos} type="submit" className=" btn-comprar"  >Comprar</button>
+                        <button type="submit" onClick={guardarDatos} className=" btn-comprar"  >Comprar</button>
 
 
                     </form>

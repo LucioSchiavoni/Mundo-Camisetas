@@ -9,6 +9,7 @@ export const ItemCart = ({ product }) => {
     return (
         <>
 
+
             <NavBar />
 
             <div className="card" style={{ "width": "18rem" }}>
