@@ -32,7 +32,7 @@ export const ItemDetail = ({ data }) => {
                         <p className='text-detail'><b>Marca:</b> {data.Marca}</p>
                         <p className='text-detail'> <b>Precio:</b> ${data.Precio}</p>
                         <select className="form-select select-btn" aria-label="Default select example">
-                            <option selected>Talle</option>
+                            <option defaultValue>Talle</option>
 
                             <option value="1">XS</option>
                             <option value="2">S</option>

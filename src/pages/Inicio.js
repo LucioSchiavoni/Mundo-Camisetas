@@ -20,10 +20,11 @@ export const Inicio = () => {
 
 
                 <div data-aos="fade-up"
-                    data-aos-duration="3000" className='titulo-qatar'>Bienvenido a...</div>
+                    data-aos-duration="3000" className='sub-title'>Mundo camisetas</div>
 
                 <div data-aos="fade-up"
-                    data-aos-duration="3000" className='sub-title'>Mundo camisetas</div>
+                    data-aos-duration="3000" className='titulo-qatar'>Todas las camisetas del mundial 2022</div>
+
 
                 <ul className='footer'>
 

@@ -7,7 +7,13 @@ import './itemCart.css'
 import { useState } from 'react';
 import firebaseApp from '../firebase/config'
 import NavBar from '../components/NavBar';
-import { useEffect } from 'react';
+import { createItem } from '../api';
+import Swal from 'sweetalert2';
+
+
+
+
+
 
 
 
@@ -17,12 +23,13 @@ const db = getFirestore(firebaseApp)
 export const Cart = () => {
 
     const { cart, totalPrice } = useCartContext();
+
     const valorInicial = {
         name: '',
         email: '',
         number: '',
         adress: '',
-        items: cart.map(product => ({ id: product.id, Nombre: product.Nombre, Precio: product.Precio, quantity: product.quantity })),
+
         total$: totalPrice()
 
     }
@@ -34,23 +41,22 @@ export const Cart = () => {
         setUser({ ...user, [name]: value })
 
     }
-
-
     const guardarDatos = async (e) => {
         e.preventDefault();
-
-        // console.log(user);
-        try {
-            await addDoc(collection(db, "orders"), {
-                ...user
-            })
-        } catch (error) {
-            console.log(error)
-        }
-        setUser({ ...valorInicial })
+        const items = cart.map(product => ({ id: product.id, Nombre: product.Nombre, Precio: product.Precio, quantity: product.quantity }))
+        const precioFinal = totalPrice();
+        const obj = { user, items, precioFinal };
+        createItem(obj).then(id => {
+            Swal.fire(`<p>Compra finalizada</p>
+         <p>Su codigo de orden es ${id}</p> `)
+        });
+        setUser({
+            name: "",
+            email: "",
+            number: "",
+            adress: ""
+        })
     }
-
-
 
 
 
@@ -64,9 +70,13 @@ export const Cart = () => {
             </>
         )
     }
+
     return (
         <>
             <div className='card-product'>
+
+
+
                 {
 
 
@@ -76,11 +86,16 @@ export const Cart = () => {
 
                     )
 
+
                 }
+
             </div>
+
+
+
             <div className='form-container'>
                 <div className='form-content'>
-                    <form onSubmit={guardarDatos}>
+                    <form>
                         <div className="mb-3">
                             <p className='form-p'>Completa la compra</p>
                             <label for="exampleInputPassword1" className="form-label">Nombre</label>
@@ -90,6 +105,11 @@ export const Cart = () => {
                             <label for="exampleInputEmail1" className="form-label">Email </label>
                             <input type="email" className="form-control" name='email' id="exampleInputEmail1" aria-describedby="emailHelp" required onChange={capturarInputs} value={user.email} />
                             <div id="emailHelp" className="form-text">No compartiremos tus datos con nadie.</div>
+                            <div className="mb-3">
+                                <label className="form-label">Repetir Email </label>
+                                <input type="email"
+                                    className="form-control" name='emailRepeat' aria-describedby="emailHelp" required />
+                            </div>
                         </div>
                         <div className="mb-3">
                             <label for="exampleInputPassword1" className="form-label">Telefono</label>
@@ -107,11 +127,13 @@ export const Cart = () => {
                             Total: ${totalPrice()}
 
                         </p>
-                        <button type="submit" className=" btn-comprar">Comprar</button>
+
+                        <button onClick={guardarDatos} type="submit" className=" btn-comprar"  >Comprar</button>
+
+
                     </form>
                 </div>
             </div>
-
 
 
         </>

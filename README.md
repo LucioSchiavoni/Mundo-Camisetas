@@ -1,10 +1,9 @@
-# Getting Started with Create React App
+# Nombre de la pagina
+Mundo Camisetas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## De que se trata
 
-## Available Scripts
-
-In the project directory, you can run:
+E-comerce de todas las equipaciones que van al mundial de qatar 2022, tanto las locales como las alternativas.
 
 ### `npm start`
 

@@ -3,7 +3,7 @@ import { db } from './firebase/config';
 
 // CREATE
 export const createItem = async (obj) => {
-    const colRef = collection(db, 'Camisetas');
+    const colRef = collection(db, 'orders');
     const data = await addDoc(colRef, obj);
     return data.id;
 }
@@ -20,6 +20,13 @@ export const getItems = async () => {
     const result = await getDocs(query(colRef));
     return getArrayFromCollection(result);
 }
+///READ ID
+
+// export const getItemsId = async () => {
+//     const colRef = collection(db, 'orders');
+//     const result = await getDocs(query(colRef));
+//     return getArrayFromCollection(result);
+// }
 
 
 
