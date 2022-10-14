@@ -58,7 +58,7 @@ export const AwayCart = () => {
         return (
             <>
                 <NavBar />
-                <p className='item-cart item-none-product'>No tiene productos </p>
+                <p className='text-alert-product'>No tiene productos </p>
                 <Link to='/Home' className='btn-comprar btn-ir'>Ir a comprar</Link>
 
             </>
@@ -89,6 +89,11 @@ export const AwayCart = () => {
                         <div className="mb-3">
                             <label for="exampleInputEmail1" className="form-label">Email </label>
                             <input type="email" className="form-control" name='email' id="exampleInputEmail1" aria-describedby="emailHelp" required onChange={capturarInputs} value={user.email} />
+                            <div id="emailHelp" className="form-text">No compartiremos tus datos con nadie.</div>
+                        </div>
+                        <div className="mb-3">
+                            <label for="exampleInputEmail1" className="form-label">Repetir email </label>
+                            <input type="email" className="form-control" name='email' id="exampleInputEmail1" aria-describedby="emailHelp" required />
                             <div id="emailHelp" className="form-text">No compartiremos tus datos con nadie.</div>
                         </div>
                         <div className="mb-3">

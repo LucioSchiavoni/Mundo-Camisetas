@@ -2,22 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useCartContext } from './CartContext'
 import ItemCart from './ItemCart';
-import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import './itemCart.css'
 import { useState } from 'react';
-import firebaseApp from '../firebase/config'
 import NavBar from '../components/NavBar';
 import { createItem } from '../api';
 import Swal from 'sweetalert2';
 
-
-
-
-
-
-
-
-const db = getFirestore(firebaseApp)
 
 
 export const Cart = () => {
@@ -50,12 +40,7 @@ export const Cart = () => {
             Swal.fire(`<p>Compra finalizada</p> <br/>
          <p>Su codigo de orden es: <b>${id}</b></p> `)
         });
-        setUser({
-            name: "",
-            email: "",
-            number: "",
-            adress: ""
-        })
+
     }
 
 
@@ -95,9 +80,9 @@ export const Cart = () => {
 
             <div className='form-container'>
                 <div className='form-content'>
-                    <form>
+                    <form onSubmit={guardarDatos}>
                         <div className="mb-3">
-                            <p className='form-p'>Completa la compra</p>
+                            <p className='form-p'>Complete su compra</p>
                             <label for="exampleInputPassword1" className="form-label">Nombre</label>
                             <input type="text" className="form-control" name='name' id="exampleInputPassword1" required onChange={capturarInputs} value={user.name} />
                         </div>
@@ -108,7 +93,7 @@ export const Cart = () => {
                             <div className="mb-3">
                                 <label className="form-label">Repetir Email </label>
                                 <input type="email"
-                                    className="form-control" name='emailRepeat' aria-describedby="emailHelp" onChange={capturarInputs} value={user.emailRepeat} />
+                                    className="form-control" name='emailRepeat' aria-describedby="emailHelp" />
                             </div>
                         </div>
                         <div className="mb-3">
