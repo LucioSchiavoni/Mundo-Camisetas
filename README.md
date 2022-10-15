@@ -2,9 +2,9 @@
 Mundo Camisetas
 
 ## De que se trata
-
 E-comerce de todas las equipaciones que van al mundial de qatar 2022, tanto las locales como las alternativas.
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/104010031/195967280-daa19285-5466-4591-89b6-7f02a0185ed8.gif)
 
 
 
