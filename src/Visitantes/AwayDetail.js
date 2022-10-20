@@ -22,7 +22,7 @@ export const AwayDetail = ({ data }) => {
         <>
             <div className='container-video-detail'>
                 <video autoPlay muted loop playsInline preload='none'>
-                    <source src='https://www.qatar2022.qa/sites/default/files/2022-10/FIFA_LIGHT%20THE%20SKY_SAVE%20THE%20DATE_HD.mp4' type='video/mp4' />
+                    <source src='https://www.qatar2022.qa/sites/default/files/2022-10/FFF-58sec-18-oct.mp4' type='video/mp4' />
                 </video>
 
                 <div className='body-detail'>

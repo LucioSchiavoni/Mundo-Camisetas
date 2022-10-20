@@ -9,12 +9,7 @@ export const Away = () => {
 
         <Logo />
         <NavBar />
-        {/* <div className='input-content'>
-                <form id='formulario'>
-                    <input type="text" id='inputForm' className='input-nav' placeholder='Buscar..' />
-                    <span className='span-input'><ion-icon name="search-outline"></ion-icon></span>
 
-                </form> */}
         <div className='cart-nav'>
             <CartWidget />
         </div>
