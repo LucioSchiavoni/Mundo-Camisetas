@@ -1,2 +1,0 @@
-npm i -g 
-npx create-react-app nombre
